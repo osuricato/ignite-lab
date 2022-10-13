@@ -1,4 +1,4 @@
-name: 'Deploy StoryBook'
+name: Deploy StoryBook
 
 on:
   push:
@@ -11,14 +11,14 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout
+        uses: actions/checkout@v3
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
         with:
           node-version: 16
       
-      - Install dependencies
+      - name: Install dependencies
         run: npm ci --legacy-peer-deps
 
       - name: Build Storybook
