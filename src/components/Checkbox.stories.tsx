@@ -9,10 +9,10 @@ export default {
   argTypes: {},
   decorators: [
     (Story) => (
-      <div className='flex items-center gap-2'>
+      <label className='flex items-center gap-2'>
         {Story()}
         <Text>Remember me my self for 30 days.</Text>
-      </div>
+      </label>
     )
   ]
 } as Meta<CheckboxProps>
